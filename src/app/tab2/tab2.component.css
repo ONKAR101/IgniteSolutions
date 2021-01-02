@@ -2,10 +2,6 @@ th img{
     width: 10rem;
     height: 10rem;
 }
-/* .list{
-    background-color: #F8F7FF;
-    
-} */
 div,th{
     border: none;
 }
@@ -13,18 +9,6 @@ th img{
     border-radius: 8px;
     box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
 }
-
-/* .preview {
-    display: none;
-  } */
-
-  /* .preview:hover{
-      position: absolute;
-      left: 0px;
-      z-index: 2;
-  } */
-
-
 .has-search .form-control {
     padding-left: 2.375rem;
 }
