@@ -22,6 +22,7 @@ export class AllbooksService {
   }
   getBookTopic(topic: any) {
     this.bookData = topic;
+    localStorage.setItem("topic",topic);
     this.router.navigate(['/booktype']);
   }
   returnBookTopic(){

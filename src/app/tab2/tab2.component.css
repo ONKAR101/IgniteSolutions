@@ -46,3 +46,12 @@ th img{
 .show-list:hover{
     cursor: pointer;
 }
+.table thead th {
+    vertical-align: unset;
+    border-bottom: none;
+}
+
+.list{
+    box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+    border-radius: 8px;
+}

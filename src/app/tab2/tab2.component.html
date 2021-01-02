@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container mb-4">
   <div class="row mt-4">
     <a (click)="Back()"><img src="./../../assets/Back.svg" class="arrowback"></a>&nbsp;&nbsp;
     <p style="font-family: Montserrat, Semi Bold;font-size: 20px;">{{topicTitle}}</p>
@@ -12,28 +12,30 @@
     </div>
   </div>
 
-  <table class="table" id="bookTable">
+  <table class="table" class="pb-5" id="bookTable">
     <thead>
       <tr class="row mt-3">
-        <div *ngFor="let allBook of Books" class="col-md-2 list">
+        <div *ngFor="let allBook of Books" class="col-md-2 mb-4 list">
           <div *ngFor="let bookResult of allBook.formats | keyvalue">
             <div on-click="seePreview(allBook)">
-              <!-- <div *ngFor="let bookAuthor of allBook.authors">
-              <div *ngFor="let bookAuthorRes of bookAuthor | keyvalue">-->
-              <th scope="col-md-12" *ngIf="bookResult.key == 'image/jpeg'"><img class="img-fluid show-list"
+              <th class="show-list" scope="col-md-12" *ngIf="bookResult.key == 'image/jpeg'"><img class="img-fluid"
                   src="{{bookResult.value}}">
                 <br>
               </th>
             </div>
           </div>
-          <div *ngFor="let bookAuthor of allBook.authors" class="col-md-8">
-            <div *ngFor="let bookAuthorRes of bookAuthor | keyvalue" class="col-md-8">
-              <th *ngIf="bookAuthorRes.key == 'name'">{{allBook.title}}<br>
+          <div class="row">
+          <div *ngFor="let bookAuthor of allBook.authors" class="col-md-12">
+            <div *ngFor="let bookAuthorRes of bookAuthor | keyvalue" class="col-md-12">
+              <div on-click="seePreview(allBook)">
+              <th class="show-list"  scope="col-md-12" *ngIf="bookAuthorRes.key == 'name'">{{allBook.title}}<br>
                 <p style="font-family: Montserrat, Regular;font-size: 12px;font-weight: bold;">{{bookAuthorRes.value}}
                 </p>
               </th>
             </div>
+            </div>
           </div>
+        </div>
         </div>
       </tr>
     </thead>
