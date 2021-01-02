@@ -1,0 +1,38 @@
+.container{
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    bottom: 0;
+    left: 0;
+    z-index: 10040;
+    overflow: auto;
+    overflow-y: auto;
+    font-size: large;
+    font-family: cursive;
+ }
+ .container iframe{
+    height: 94%;
+ }
+
+ .close{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+ }
+ .mat-dialog-actions {
+    /* padding: 8px 0; */
+    /* display: flex; */
+    flex-wrap: wrap;
+    min-height: 52px;
+    align-items: center;
+    box-sizing: content-box;
+    margin-bottom: -24px;
+}
+iframe{
+   background-color: white;
+}
+
+
+
+
+ 

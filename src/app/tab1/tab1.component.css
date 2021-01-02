@@ -1,0 +1,82 @@
+  .centered p, p{
+      text-align: left;
+  }
+
+  .category{
+      height: 3rem;
+  }
+  .category div{
+    padding: 10px 0px 0px 10px;
+    font-family: Montserrat, Regular;
+}
+.category img{
+    height: 20px;
+}
+  
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: Montserrat, Regular;
+  font-size: 48px;
+}
+.title {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  font-family: Montserrat, Regular;
+  color: #5E56E7 ;
+  text-align: left;
+}
+.subtitle{
+  font-family: Montserrat, Semi Bold;
+  color: #5E56E7 ;
+  font-size: large;
+  text-align: left;
+}
+
+.arrownext:hover{
+  cursor: pointer;
+}
+
+
+@media only screen and (min-width: 100px) {
+  .title{font-size: 2px;
+    margin-top: 10px;position: absolute;}
+    .subtitle{font-size: 10px;
+      margin-top: 50px;position: absolute;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 200px) {
+  .title{font-size: 15px;
+    margin-top: 7px;position: absolute;}
+    .subtitle{font-size: 8px;
+      margin-top: 15px;position: absolute;}
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 500px) {
+  .title{font-size: 35px;
+    margin-top: 1px;position: absolute;}
+    .subtitle{font-size: 13px;
+      margin-top: 8px;position: absolute;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 900px) {
+  .title{font-size: 45px;
+    margin-top: 1px;position: absolute;}
+    .subtitle{font-size: 16px;
+      margin-top: 10px;position: absolute;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .title{font-size: 48px;
+    margin-top: 1px;position: absolute;}
+    .subtitle{font-size: 16px;
+      margin-top: 15px;position: absolute;}
+}
